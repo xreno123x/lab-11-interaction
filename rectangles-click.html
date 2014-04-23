@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<canvas id="sketch" width="800" height="600">
+</canvas>
+<script>
+document.addEventListener('DOMContentLoaded', main);
+//document.addEventListener('click', main);
+
+var sketch;
+var context;
+
+function main() {
+	sketch = document.getElementById('sketch');
+	context = sketch.getContext("2d");
+	context.fillStyle="000000"
+	sketch.addEventListener("click", function(event) {
+		draw_exclamation(event.x, event.y);
+	});
+}
+
+function draw_exclamation(x, y) {
+	context.fillRect(x, y, 50, 100);
+	}
+</script>
+</body>
