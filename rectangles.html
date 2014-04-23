@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<canvas id="sketch" width="800" height="600">
+</canvas>
+<script>
+document.addEventListener('DOMContentLoaded', main);
+
+var sketch;
+var context;
+
+function main() {
+	sketch = document.getElementById('sketch');
+	context = sketch.getContext("2d");
+	// draw here... for example:
+	// draw_circle(100, 200, 25);
+	context.fillStyle="#ff0000"
+	 context.fillRect(0, 0, 100, 100);
+	 context.fillStyle="#000000"
+	 context.fillRect(0,150,100,100);
+}
+</script>
+</body>
